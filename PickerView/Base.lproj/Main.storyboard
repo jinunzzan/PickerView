@@ -18,6 +18,9 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-M7-nfy">
                                 <rect key="frame" x="0.0" y="59" width="393" height="216"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="x8y-U6-2R9"/>
+                                </connections>
                             </pickerView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C6r-7q-AOF">
                                 <rect key="frame" x="0.0" y="455" width="393" height="363"/>
@@ -42,7 +45,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vFk-Ke-Dwx" firstAttribute="firstBaseline" secondItem="7lA-Tg-1Um" secondAttribute="firstBaseline" id="N3W-Kh-7Nb"/>
-                            <constraint firstItem="7lA-Tg-1Um" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vFk-Ke-Dwx" secondAttribute="trailing" symbolic="YES" id="PSt-Qv-HzD"/>
+                            <constraint firstItem="7lA-Tg-1Um" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vFk-Ke-Dwx" secondAttribute="trailing" constant="8" symbolic="YES" id="PSt-Qv-HzD"/>
                             <constraint firstItem="vFk-Ke-Dwx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="SeS-7v-sBM"/>
                             <constraint firstItem="C6r-7q-AOF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T2O-cO-aAf"/>
                             <constraint firstItem="O4B-M7-nfy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yei-oc-zCY"/>
@@ -56,6 +59,11 @@
                             <constraint firstItem="vFk-Ke-Dwx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zp4-Fd-aOc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="C6r-7q-AOF" id="ZVa-Ti-kkc"/>
+                        <outlet property="lblImageFileName" destination="7lA-Tg-1Um" id="o55-BO-dCm"/>
+                        <outlet property="pickerImage" destination="O4B-M7-nfy" id="f44-yj-icp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
